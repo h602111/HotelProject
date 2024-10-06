@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="FrontDeskApp.Pages.Rooms"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FrontDeskApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--
+    <Grid Grid.Row="1">
+        <Button>Add</Button>
+        <Button>Refresh</Button>
+    </Grid>
+
+    <Grid  >
+        <TextBox x:Name="SearchText" />
+        <Button>Search</Button>
+    </Grid>
+
+    -->
+    <ListView x:Name="RoomList">
+    </ListView>
+
+
+</Page>

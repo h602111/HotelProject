@@ -1,0 +1,36 @@
+syntax = "proto3";
+package hotel_service;
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "HotelService";
+
+
+service Booking {
+  // rpc Login(Credentials) returns (User);
+  rpc RequestRoom(Reservation) returns (Reservation);
+  rpc GetRooms(Empty) returns (stream Room);
+}
+
+message Empty {
+
+}
+
+message Room {
+  int32 RoomNr = 1;
+  int32 NumberOfBeds = 2;
+  int32 RoomSize = 3;
+  int32 Price = 4;
+  bool Available = 5;
+}
+
+message Reservation {
+  int32 RoomNr = 1;
+  int32 UserNr = 2;
+  google.protobuf.Timestamp date = 3;
+}
+
+message User {
+  int32 UserNr = 1;
+  string Email = 2; 
+  string Password = 3;
+}

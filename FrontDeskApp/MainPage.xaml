@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="FrontDeskApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FrontDeskApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView 
+            x:Name="mainNav" 
+            ItemInvoked="mainNav_ItemInvoked" 
+            PaneDisplayMode="Top" 
+            IsBackEnabled="False"
+        >
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="A" x:Name="RoomsNavItem" />
+                <NavigationViewItem Content="B" x:Name="ReservationsNavItem" />
+                <NavigationViewItem Content="C" x:Name="CheckInNavItem" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <!--
+            <NavigationViewItem Header="Rooms">
+            <TextBlock Text="Rooms" />
+        </NavigationViewItem>
+        <PivotItem Header="Reservations">
+            <TextBlock Text="Reservations" />
+        </PivotItem>
+        <PivotItem Header="Check Ins and Outs">
+            <TextBlock Text="Check Ins and Outs" />
+        </PivotItem>
+        -->
+    </Grid>
+</Page>
