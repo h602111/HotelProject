@@ -19,7 +19,7 @@ namespace HotelDataLibrary.Database {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Server=tcp:dat154gruppe7.database.windows.net,1433;Initial Catalog=Dat154Tanvir;Persist Security Info=False;User ID=h602605;Password=EagleBison3400;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            => optionsBuilder.UseNpgsql("Server=[],[port];Initial Catalog=Dat154Tanvir;Persist Security Info=False;User ID=[];Password=[];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
     }
 }
